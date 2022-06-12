@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav img {
+  width: 70px
+}
+
+header h2 {
+  margin-left: 95px;
+}
+
+.menu {
+  background-color: #ff0000;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
+}
+
+.menu a {
+  color:white;
+  text-decoration: none;
+  margin: 5.9em;
+}
+
+.list {
+  text-decoration: none;
+}
+
+.preco {
+  color: red;
+}
+
+footer p {
+  margin: 5px;
+}
+
+#rodape {
+  text-align: center;
+}
+
+#formas_pagamento {
+  color: #ff0000;
+}
+
+
+/* Estilização pagina principal */
+.home {
+  text-align: center;
+  margin: 150px 0 170px;
+}
+
+/* Estilização Produtos */
+.categorias {
+  margin-left: 80px;
+}
+
+.produtos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  word-break: break-all;
+  gap: 20px;
+  margin: 50px auto 100px;
+}
+
+.box_produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.box_produtos img {
+  height: 200px;
+  display: block;
+}
+
+.descricao {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ccc;
+}
+
+.cort {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.box_produtos p {
+  line-height: 25px;
+  margin: 0;
+}
+
+/* Estilização Nossas Lojas */
+.loja {
+  width: 100%;
+  padding: 20px;
+  margin-inline: 80px;
+}
+
+#lojas {
+  overflow: hidden;
+}
+
+.loja td {
+  width: 33%;
+}
+
+/* Estilização Fale conosco */
+.list {
+  display: flex;
+  gap: 30%;
+}
+
+.list li img {
+  width: 200px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.contact {
+  width: 35%;
+  margin: 50px auto 100px;
+}
+
+.contact h4 {
+  margin: 20px 0 5px;
+  padding: 0;
+}
+
+.contact input {
+  width: 400px;
+  padding: 5px;
+  outline: none;
+}
+
+.contact textarea {
+  width: 393px;
+  height: 200px;
+  padding: 10px;
+  outline: none;
+  resize: none;
+}
+
+.contact [type="submit"] {
+  width: 150px;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.932);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 125px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.contact [type="submit"]:hover {
+  background-color: rgba(255, 0, 0, 0.664);
+  color: #000;
+}
+
+/* Responsive */
+@media screen and (max-width: 868px) {
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 658px) {
+  .produtos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
